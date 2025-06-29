@@ -6,8 +6,8 @@ import Image from "next/image";
 interface Contributor {
   id: number;
   name: string;
-  role: string;
-  bio: string;
+  // role: string;
+  // bio: string;
   imagePath: string;
 }
 
@@ -15,30 +15,29 @@ interface Contributor {
 const contributors: Contributor[] = [
   {
     id: 1,
-    name: "Dr. Aarav Sharma",
-    role: "Co-Founder & Medical Director",
-    bio: "With over 20 years of experience in healthcare, Dr. Sharma leads our medical initiatives and partnerships with hospitals.",
+    name: "Prof. Prashant Vaidya",
+    // role: "Co-Founder & Medical Director",
+    // bio: "With over 20 years of experience in healthcare, Dr. Sharma leads our medical initiatives and partnerships with hospitals.",
     imagePath: "/images/cofounders/aarav-sharma.jpg",
   },
   {
     id: 2,
-    name: "Priya Patel",
-    role: "Co-Founder & Executive Director",
-    bio: "A seasoned NGO leader with expertise in strategic planning, Priya oversees all operations and community outreach programs.",
+    name: "Padma Vaidya",
+    // bio: "A seasoned NGO leader with expertise in strategic planning, Priya oversees all operations and community outreach programs.",
     imagePath: "/images/cofounders/priya-patel.jpg",
   },
   {
     id: 3,
-    name: "Vikram Mehta",
-    role: "Co-Founder & Finance Director",
-    bio: "Having worked in financial services for 15 years, Vikram manages our financial strategy and ensures transparency with donors.",
+    name: "Ayush Vaidya",
+    // role: "Co-Founder & Finance Director",
+    // bio: "Having worked in financial services for 15 years, Vikram manages our financial strategy and ensures transparency with donors.",
     imagePath: "/images/cofounders/vikram-mehta.jpg",
   },
   {
     id: 4,
-    name: "Anjali Desai",
-    role: "Co-Founder & Program Director",
-    bio: "With a background in social work, Anjali develops our programs to maximize impact and address community needs effectively.",
+    name: "Rutuj Vaidya",
+    // role: "Co-Founder & Program Director",
+    // bio: "With a background in social work, Anjali develops our programs to maximize impact and address community needs effectively.",
     imagePath: "/images/cofounders/anjali-desai.jpg",
   },
 ];
@@ -70,15 +69,15 @@ const Contributors = () => {
                   <p className="text-white text-xl font-bold">{contributor.name.split(" ")[0][0]}{contributor.name.split(" ")[1][0]}</p>
                 </div>
               </div>
-              <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+               <h3 className="text-xl font-medium text-gray-900 dark:text-white">
                 {contributor.name}
-              </h3>
+              </h3>{/*
               <p className="text-sm text-emerald-600 dark:text-emerald-400 mt-1">
                 {contributor.role}
               </p>
               <p className="mt-3 text-base text-gray-500 dark:text-gray-400 px-4">
                 {contributor.bio}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>
